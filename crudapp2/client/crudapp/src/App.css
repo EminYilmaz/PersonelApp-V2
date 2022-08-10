@@ -1,0 +1,564 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+body{
+  background: url('../src/images/desk.jpg') no-repeat center center/cover;
+  font-family: 'Dancing Script', cursive;
+  width: 100%;
+  height: 100vh;
+}
+
+.App{
+  line-height: 1.6;
+}
+
+
+.App .App-next {
+ 
+ 
+  width: 1300px;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.App .App-next .navbar{
+
+height: 50px;
+background-color: #d7dce6;
+border-radius: 10px;
+display: flex;
+justify-content:space-between;
+align-items: center;
+z-index: 10;
+opacity: 0.8;
+animation: anidown 1.6s;
+}
+
+@keyframes anidown{
+  0%{
+    transform: translateY(-70px);
+      }
+    
+      100%{
+    transform: translateY(0);
+      }
+}
+
+.App .navbar h3{
+  margin-left: 70px;
+}
+
+.App .navbar ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+
+.App .navbar ul li{
+
+  display: inline-block;
+  font-size: 22px;
+  margin-right: 120px;
+  color: rgb(5, 85, 5);
+  
+}
+
+.App .navbar ul li:hover{
+  cursor: pointer;
+  border-bottom: 1px solid black;
+  background: rgb(196, 190, 190);
+
+}
+
+
+.App .App-next .mainpage{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  width: 1300;
+  height: 100vh;
+ 
+}
+
+.App .App-next .mainpage .definition{
+  z-index: 10;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+ 
+}
+
+ h2{
+position: relative;
+font-size: 3vw;
+color: #252839;
+-webkit-text-stroke:0.3vw #383d52;
+text-transform: uppercase;
+}
+
+
+ h2::before{
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  color: rgb(143, 155, 143);
+  -webkit-text-stroke:0vw #383d52;
+  border-right: 2px solid rgb(143, 155, 143);
+  overflow: hidden;
+  animation: animate 6s linear infinite;
+  }
+
+  @keyframes animate{
+    0%,10%,100%{
+        width: 0;
+    }
+    70%,90%{
+width: 100%;
+    }
+}
+
+.App .App-next .mainpage .definition .one{
+  font-size: 80px;
+  font-weight: bold;
+  color:rgb(143, 155, 143);
+  animation: text-animation1 1.5s;
+}
+
+@keyframes text-animation1{
+
+  0%{
+transform: translateX(-1400px);
+  }
+
+  100%{
+transform: translateX(0);
+  }
+
+}
+
+@keyframes text-animation2{
+
+  0%{
+transform: translateX(2000px);
+  }
+
+  100%{
+transform: translateX(0);
+  }
+
+}
+
+
+
+.App .App-next .mainpage .definition .two{
+  font-size: 50px;
+  font-weight: bold;
+  color:rgb(143, 155, 143);
+  animation: text-animation2 1.5s;
+}
+
+
+
+
+
+
+
+
+
+
+.App .App-next .mainpage .image{
+
+  width: 1300px;
+  height: 100vh;
+  background: no-repeat;
+  border-radius: 10px;
+  opacity: 0.9;
+}
+
+.App .App-next .Personel{
+
+  width: 1300px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+ opacity: 0.9;
+
+
+}
+
+.App .App-next .Personel .Add{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 300px;
+height: 350px;
+background: #ebebeb;
+border-radius: 15px;
+border: 1px solid #ebebeb;
+margin-bottom: 30px;
+padding: 30px 40px;
+animation: fadeIn 2s;
+}
+
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+.App .App-next .Personel .Add input{
+  
+  width: 60%;
+  border-radius: 3px;
+  height: 23px;
+  background: #f6f8fa;
+  font-weight: bold;
+  padding-left: 2px;
+}
+
+.App .App-next .Personel .Add label{
+
+  font-size: 22px;
+}
+
+.App .App-next .Personel .Add h3{
+
+  margin-bottom: 10px;
+  border-bottom: 1px solid #0e50d4;
+  font-size: 30px;
+}
+
+.App .App-next .Personel .Add button{
+
+  margin-top: 25px;
+  height: 35px;
+  width:60% ;
+  border-radius: 5px;
+  color: #0e50d4;
+}
+
+
+.App .App-next .Personel .Add button:hover{
+  background: #b2b6bd;
+  color: #063ca8;
+}
+
+
+
+/* PErsonel Listesi */
+
+.App .App-next .listcontainer{
+
+  display: flex;
+  flex-direction: column;
+ 
+  justify-content: center;
+  align-content: center;
+
+}
+.App .App-next .listcontainer .listheader{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  border: none;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background:#d7dce6 ;
+  margin: auto;
+  opacity: 0.8;
+  width: 1300px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color:rgb(5, 85, 5);
+}
+
+.App .App-next .listcontainer .search-list{
+height: 100%;
+width: 100%;
+  margin-left: 25.5%;
+  margin-bottom: 5px;
+ 
+}
+
+
+.App .App-next .listcontainer .search-list input{
+  height: 30px;
+  width: 74%;
+  border:none;
+  border-radius: 10px;
+  padding-left: 10px;
+  font-size: 18px;
+}
+
+.App .App-next .listcontainer .search-list input:focus{
+  outline: #d7dce6;
+}
+.App .App-next .listcontainer .divided{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.App .App-next .listcontainer .divided .div-left{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  
+}
+
+.App .App-next .listcontainer .divided .div-right .list{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1px;
+  width: 960px;
+  height: 830px;
+  margin-left: 70px;
+  padding-top: 10px;
+  background-color: #fff;
+  opacity: 0.9;
+  justify-items: center;
+  border-radius: 10px;
+   overflow: auto;
+}
+
+ 
+.App .App-next .list .card{
+
+  background: #d7dce6;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 250px;
+  height: 250px;
+  margin:  10px 10px;
+
+}
+
+.App .App-next .list .card .card-body{
+  background: #d7dce6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 22px;
+  height: 100%;
+  width: 100%;
+  color:rgb(5, 85, 5);
+}
+
+.App .App-next .list .card .card-body h3{
+  color: #252839;
+}
+
+
+
+.App .App-next .list .card .card-body .buttons{
+
+  height: 100%;
+  width: 100%;
+  margin-top: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+.App .App-next .list .card .card-body .buttons #del:hover{
+  cursor: pointer;
+  background: red;
+}
+
+.App .App-next .list .card .card-body .buttons #edit:hover{
+  cursor: pointer;
+  background: blue;
+}
+
+.App .App-next .list .card .card-body .buttons input{
+  border-radius: 5px;
+  border: none;
+  height: 30px;
+  width: 60px;
+}
+
+
+
+.App .App-next .list .card .card-body .buttons input #edit:hover{
+background: #7084ad;
+cursor: pointer;
+}
+
+/* Edit Kısmı */
+
+
+.App .Edit{
+  height: 90vh;
+  width: 1300px;
+  overflow: hidden;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.App .Edit .editPer{
+  height: 300px;
+  width: 350px;
+  border: 1px solid #e2d1d1;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.App .Edit .editPer h1{
+  color:rgb(5, 85, 5);
+}
+
+.App .Edit .editPer .edit-top{
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.App .Edit .editPer .edit-top .edit-left{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+  width: 50%;
+  height: 100%;
+  font-size: 22px;
+  color:rgb(5, 85, 5);
+}
+
+.App .Edit .editPer .edit-top .edit-right{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: right;
+  width: 50%;
+  height: 100%;
+  margin-top: 5px;
+}
+
+.App .Edit .editPer .edit-top .edit-right input{
+  height: 27px;
+  width: 85%;
+  margin-bottom: 10px;
+  margin-right: 30px;
+  border-radius: 5px;
+  border: 1px solid #7084ad;
+  padding-left: 5px;
+}
+
+
+.App .Edit .editPer .edit-bottom{
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px;
+  margin-bottom: 15px;
+}
+
+.App .Edit .editPer .edit-bottom button{
+  height: 30px;
+  width: 30%;
+  background: #a7b4ce;
+  border: #383d52;
+  border-radius: 5px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 20px;
+}
+
+.App .Edit .editPer .edit-bottom button:hover{
+  cursor: pointer;
+  color: #d7dce6;
+  background: #063ca8;
+}
+
+
+.App .App-next .listcontainer .divided .div-left .search{
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 500px;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 15px;
+  
+  /* margin-left: 100px; */
+}
+
+.App .App-next .listcontainer .divided .div-left .search .accordion{
+  width: 325px;
+ background: #D9DDE6;
+ line-height: 2.5em;
+ font-size: 21px;
+ border-radius: 15px;
+}
+
+
+
+.App .App-next .accordion .item{
+ 
+  margin-bottom: 5px;
+  padding: 10px 20px;
+}
+.App .App-next .accordion .item .id{
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.App .App-next .accordion .item .dept{
+
+max-height:0;
+overflow: hidden;
+transition: all 0.5s cubic-bezier(0,1,0,1);
+}
+
+.App .App-next .accordion .item .dept.show{
+  height: auto;
+  max-height: 9999px;
+  transition: all 0.9s cubic-bezier(1,0,1,0);
+}
